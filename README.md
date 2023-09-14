@@ -52,7 +52,6 @@ module "example" {
 
 | Name | Description |
 |------|-------------|
-| <a name="output_meaningless_variable"></a> [meaningless\_variable](#output\_meaningless\_variable) | Meaningless example variable created for demonstrative purposes. |
 | <a name="output_resource_group_id"></a> [resource\_group\_id](#output\_resource\_group\_id) | The id of the resource group created. |
 | <a name="output_subnets"></a> [subnets](#output\_subnets) | The subnets created. |
 | <a name="output_vnet"></a> [vnet](#output\_vnet) | The vnet created. |
