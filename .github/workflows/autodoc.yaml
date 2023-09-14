@@ -1,6 +1,6 @@
 ###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<
 ### Autodoc Workflow - Terraform-docs
-### Version: 1.0.0  
+### Version: 1.0.1
 ###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<###>-<
 name: "Autodoc Workflow - Terraform-docs"
 
@@ -8,6 +8,7 @@ name: "Autodoc Workflow - Terraform-docs"
 on:
   pull_request:
 
+# Selecting ubuntu-latest provisions a VM with latest stable image GitHub offers. 
 jobs:
   tfdocs:
     runs-on: ubuntu-latest
@@ -52,8 +53,6 @@ jobs:
         github-token: ${{ secrets.GH_TOKEN }}
         script: |
           const output = `Terraform-docs has updated the README.md. 
-
-          Click below to see the file contents. 
 
           ${process.env.readme}`
           github.rest.issues.createComment({
