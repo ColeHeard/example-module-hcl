@@ -48,7 +48,3 @@ variable "service_delegation_action" {
   description = "The scope of actions a delegated service can make."
   default     = ["Microsoft.Network/virtualNetworks/subnets/join/action", "Microsoft.Network/virtualNetworks/read", "Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"]
 }
-output "meaningless_variable" {
-  description = "Meaningless example variable created for demonstrative purposes."
-  value       = "Example output."
-}
